@@ -29,15 +29,19 @@
             display:inline-block;
             padding:0 27px;
         }
-        .list{
+        .article{
             background-color: azure;
             margin-left: 10%;
             margin-right: 10%;
         }
-        .singleblock{
-            background-color: aquamarine;
-            font-size:16px;
-            display:inline-block;
+        .mainText{
+            background-color:aliceblue;
+        }
+        .mainText p{
+            white-space: pre;
+        }
+        .time{
+            text-align: right;
         }
     </style>
 </head>
@@ -48,15 +52,15 @@
             <ul id="nav">
                 <li>
                     <a href="https://fnsoidathq.github.io/">首页</a>
-                    <!-- <a href="index.html">首页</a> -->
+                    <!-- <a href="../index.html">首页</a> -->
                 </li>
                 <li>
                     <a href="https://fnsoidathq.github.io/ArticleDirectories">文章目录</a>
-                    <!-- <a href="ArticleDirectories.html">文章目录</a> -->
+                    <!-- <a href="../ArticleDirectories.html">文章目录</a> -->
                 </li>
                 <li>
                     <a href="https://fnsoidathq.github.io/FunLinks">实用链接</a>
-                    <!-- <a href="FunLinks.html">实用链接</a> -->
+                    <!-- <a href="../FunLinks.html">实用链接</a> -->
                 </li>
                 <li>
                     <a href="https://vk.com/albums-91604037">占位符</a>
@@ -65,13 +69,13 @@
         </div>
     </header>
     
-    <div>
-        <h2 style="text-align:center;margin:3%">目录</h2>
-        <div class="list">
-            <div class="singleblock">
-                <!-- <a href="Articles/test.html">测试/需求</a> -->
-                <a href="https://fnsoidathq.github.io/Articles/test.html">测试/需求</a>
-            </div>
+    <div class="article">
+        <h2 style="text-align:center;margin:50px">测试/需求</h2>
+        <div>
+            <p class="time">时间：2022.10.26 23：29</p>
+        </div>
+        <div class="mainText">
+            <p>  这既是文章版面的测试，也用于记录对网站需求的简单分析</p>
         </div>
     </div>
 
