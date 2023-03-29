@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <!-- 我期望这样可以强制它在那些不一定能加载出来的统计工具前加载好 -->
-    <script src="https://fnsoidathq.github.io/Script/General_script.js">
-    </script>
+    <script type="text/javascript" src="../../../Script/jquery-3.6.4.min.js"></script>
+    <script src="../../../Script/General_script.js"></script>
 
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LM0V2TGDQJ"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-LM0V2TGDQJ"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -17,7 +17,7 @@
     </script>
 
     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
-    </script>
+    </script> -->
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -97,6 +97,7 @@
         }
 
     </style>
+    <link rel="stylesheet" href="../../../Css/generalCss.css">
 </head>
 <body style="background-color:deepskyblue">
     <header class="header">
@@ -135,26 +136,34 @@
             </div>
         </div>
         <div onclick="topFunction()"  id="RTop">返回顶部</div>
+        <div class="float_left">
+            <button onclick="nav_control()" class="nav_button">收起</button>
+            <hr class="divide_nav">
+            <div class="nav_float">
+                <h3>  目录</h3>
+                <a href="#Q0">常见问题</a>
+                <a href="#Q0_0"  >  基本问题</a>
+                <a href="#Q0_0_0">    1.如何安装mod？</a>
+                <a href="#Q0_0_1">    2.关于汉化/本地化/翻译问题</a>
+                <a href="#Q0_0_2">    3.关于作弊</a>
+                <a href="#Q0_0_3">    4.关于多人联机</a>
+                <a href="#Q0_0_4">    5.关于游戏版本</a>
+                <a href="#Q0_0_5">    6.关于更新</a>
+                <a href="#Q0_0_6">    7.关于战争之人：突击小队2本身</a>
+                <a href="#Q0_1"  >  游戏内报错问题</a>
+                <a href="#Q0_1_0">    1.内存/显存溢出</a>
+                <a href="#Q1">基于版本的特定问题</a>
+                <a href="#Q1_0">  1.74版本</a>
+                <a href="#Q1_0_0">    多人游戏</a>
+                <a href="#Q1_0_0_0">      1.支援卡召唤出的空载具？</a>
+            </div>
+        </div>
+        
 
 
         <div class="mainText">
         <p>  如果你有想问的，或者觉得可以在这里添加的。因为静态网站不好搞评论区，可以在b站相同专栏下回复我。</p>
         <p>  b站专栏链接：<a href="https://www.bilibili.com/read/cv20004221">cv20004221</a></p>
-
-        <h2>  目录</h2>
-        <p>   <a href="#Q0">常见问题</a></p>
-        <p>   <a href="#Q0_0"  >基本问题</a></p>
-        <p>  <a href="#Q0_0_0">    1.如何安装mod？</a></p>
-        <p>  <a href="#Q0_0_1">    2.关于汉化/本地化/翻译问题</a></p>
-        <p>  <a href="#Q0_0_2">    3.关于作弊</a></p>
-        <p>  <a href="#Q0_0_3">    4.关于多人联机</a></p>
-        <p>  <a href="#Q0_0_4">    5.关于游戏版本</a></p>
-        <p>   <a href="#Q0_1"  >游戏内报错问题</a></p>
-        <p>  <a href="#Q0_1_0">    1.内存/显存溢出</a></p>
-        <p>   <a href="#Q1">基于版本的特定问题</a></p>
-        <p>   <a href="#Q1_0">1.74版本</a></p>
-        <p>   <a href="#Q1_0_0">  多人游戏</a></p>
-        <p>   <a href="#Q1_0_0_0">    1.支援卡召唤出的空载具？</a></p>
 
         <h2 id="Q0">  常见问题</h2>
         <h4 id="Q0_0">  基本问题</h2>
@@ -224,7 +233,7 @@
         
         <br><br><br><br>
         <h4 id="Q0_0_2">3.关于作弊</h4>
-        <p>  <strong>不存在</strong>官方的作弊mod！但是如果你需要可以从第三方，如mow-protal之类的地方下载到，这里不提供链接。</p>
+        <p>  <strong>不存在</strong>官方的作弊mod！但是如果你需要可以从第三方，如mow-protal之类的地方下载到，这里提供一个链接（很多人在做作弊mod，我只是给出一个我知道的）:<br>    <a href="https://mow-portal.ru/load/v_tylu_vraga_2_shturm_2/cold_war_cheat/5-1-0-4925">mow-portal</a></p>
         <p>  另外，如果你真的需要作弊，没有必要使用任何作弊mod，使用游戏的编辑器，它比任何作弊mod都强大。</p>
 
         <br><br><br><br>
@@ -243,6 +252,20 @@
         <p>  3.<a href="http://pan.baidu.com/s/1U5eC-zX9e6-0OJRc6zyzAw&pwd=oz4a">百度网盘</a> mod版本1.69~1.74</p>
         <p>  4.<a href="https://www.moddb.com/mods/cold-war-mod/downloads">moddb</a> mod版本 1.73~1.74</p>
         <p>  注：1.在3对应的的百度物品链接中，修正版 =如果出现修正版，说明在版本号没有变化的情况下mod进行了热更新。所以如果有修正版，我们就下载修正版。类似的，在外文网站，hotfix=修正版。</p>
+        
+        <br><br><br><br>
+        <h4 id="Q0_0_5">6.关于更新</h4>
+        <p>  我可以确定的告诉你，在99%的情况下，问更新是得不到回答的，基本上<strong>不可能</strong>会有确切的新版本发布日期，原因如下：</p>
+        <p>  1.mod开发组是一个松散的结构，所有成员都在用业余时间进行开发，并且随时可能退出或者暂时离开开发组，这注定了开发速度是不稳定的，并且没有任何保障。</p>
+        <p>  2.确定的发布时间对mod开发本身有害，计划总是赶不上变化，结果就是往往为了赶在确定日期前发布，所有的准备工作都会进行的很仓促，最终mod会遗留下大量的bug。并且因为分发文件中的种种问题，进行临时更新来修复bug很麻烦。与其如此，不如不确定日期，而是等到我们评估认为mod已经可以推进到下个版本了，再进行更新。</p>
+        <p>  不过仍然的，我们可以基于经验给出一些或多或少会有效的推测：比如CW每年往往更新1-2次，如果是整版本号(1.6.0,1.7.0)往往不会有大更新，更新周期大约在半年左右。然后通过不断关注最新消息来大致猜测下次更新还有多久到来。但是没有任何实质性的保证，我不能保证以上的任何一条推测会有效。</p>
+
+        <br><br><br><br>
+        <h4 id="Q0_0_6">7.关于战争之人：突击小队2本身</h4>
+        <p>  如果你是第一次玩这个游戏（下简称AS2），我简单给出一些购买指南。</p>
+        <p>  AS2在每次steam特卖(春季特卖,夏季特卖,圣诞节特惠.....)都打折，并且力度很大，一般都是-81%，所以没有任何必要在非打折期间买，毕竟这款游戏已经卖了10年了！没有任何必要给开发组送钱。</p>
+        <p>  一般来说，建议买黄金版(gold editon)，或者如果你实在想在非打折期间买，我建议你上淘宝买key，基本上一个价（甚至更便宜）</p>
+        <p>  细一点说，实际上需要购买的是游戏本体+铁拳(iron fist)DLC和空降(airbrone)DLC,但是单买dlc十分昂贵。远不如直接买黄金版，黄金版只是多了一个屁用没有的dlc，但是实际花费是变少了的。</p>
 
         <h4 id="Q0_1">  游戏内报错问题</h2>
         <h4 id="Q0_1_0">1.内存/显存溢出</h4>
